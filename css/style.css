@@ -23,6 +23,10 @@ body{
     width: 100%;
 }
 
+.display-flex{
+    display: flex;
+}
+
 /* HEADER */
 header{
     width: 100%;
@@ -62,8 +66,39 @@ footer .bg-color-section{
 
 /* Media Tablet */
 @media screen and (max-width: 992px) and (min-width: 576px){
-    body{
-        background-color: red;
+    .row{
+        flex-direction: row;
+        gap: 20px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .col{
+        margin-top: 0;
+    }
+
+    .col-33{
+        width: calc(100% / 3 - 20px);
+    }
+
+    .col-66{
+        width: calc(100% / 3 * 2 - 20px);
+    }
+
+    .col-40{
+        width: calc(40% - 20px);
+    }
+
+    .col-50{
+        width: calc(100% / 2 - 20px);
+    }
+
+    .col-60{
+        width: calc(60% - 20px);
+    }
+
+    .text{
+        margin-right: 40px;
     }
 }
 
