@@ -40,6 +40,13 @@ header .row{
     flex-direction: row;
 }
 
+.list-menu{
+    display: none;
+}
+
+.hamburger-menu{
+    display: block;
+}
 /* MAIN */
 /* DEMO */
 section{
@@ -65,7 +72,7 @@ footer .bg-color-section{
 }
 
 /* Media Tablet */
-@media screen and (max-width: 992px) and (min-width: 576px){
+@media screen and (min-width: 576px){
     .row{
         flex-direction: row;
         gap: 20px;
@@ -104,7 +111,23 @@ footer .bg-color-section{
 
 /* Media Desktop */
 @media screen and (min-width: 992px) {
-    body{
-        background-color: rgb(0, 26, 255);
+    .col-40-desk{
+        width: calc(40% - 20px);
+    }
+
+    .col-60-desk{
+        width: calc(60% - 20px);
+    }
+
+    .col-50{
+        width: calc(100% / 3 - 20px);
+    }
+
+    .hamburger-menu{
+        display: none;
+    }
+
+    .list-menu{
+        display: block;
     }
 }
