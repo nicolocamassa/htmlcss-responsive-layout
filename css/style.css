@@ -9,13 +9,20 @@ body{
 }
 /* COMMON */
 .space-btw{
+    height: 100%;
+    display: flex;
+    align-items: center;
     justify-content: space-between;
 }
 
-.align-center{
-    align-items: center;
+.container{
+    width: 100%;
+    height: 100%;
 }
 
+.align-items{
+    align-items: center;
+}
 .row{
     display: flex;
     flex-direction: column;
@@ -27,6 +34,11 @@ body{
     display: flex;
 }
 
+section{
+    padding: 100px 0;
+    margin: 0 20px;
+}
+
 /* HEADER */
 header{
     width: 100%;
@@ -34,6 +46,10 @@ header{
     background-color: #0084fd;
     padding: 0 20px;
     position: fixed;
+}
+
+.section-1{
+    padding-top: 150px;
 }
 
 header .row{
@@ -49,10 +65,9 @@ header .row{
 }
 /* MAIN */
 /* DEMO */
-section{
-    padding: 100px 0;
-    margin: 0 20px;
-}
+
+
+
 
 .col{
     width: 100%;
@@ -73,9 +88,18 @@ footer .bg-color-section{
 
 /* Media Tablet */
 @media screen and (min-width: 576px){
+    .container{
+        width: 100%;
+        height: 100%;
+        margin: 0 auto;
+    }
+
+    .gap-column{
+        gap: 20px;
+    }
+
     .row{
         flex-direction: row;
-        gap: 20px;
         flex-wrap: wrap;
         justify-content: center;
     }
@@ -107,10 +131,15 @@ footer .bg-color-section{
     .text{
         margin-right: 40px;
     }
+
 }
 
 /* Media Desktop */
 @media screen and (min-width: 992px) {
+    .container{
+        max-width: 1200px;
+    }
+
     .col-40-desk{
         width: calc(40% - 20px);
     }
