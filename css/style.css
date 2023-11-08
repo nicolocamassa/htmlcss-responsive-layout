@@ -31,6 +31,9 @@ h2{
     font-size: 30px;
 }
 
+.line-height{
+    line-height: 2;
+}
 .bg-white{
     background-color: white;
 }
@@ -53,6 +56,10 @@ h2{
 
 .display-flex{
     display: flex;
+}
+
+.text-center{
+    text-align: center;
 }
 
 .text-style{
@@ -122,6 +129,22 @@ header{
     padding: 0 20px;
     position: fixed;
     z-index: 1;
+}
+
+header ul{
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+header li{
+    margin-right: 20px;
+}
+
+header li:nth-last-of-type(1){
+    background-color: white;
+    padding: 10px 20px;
+    border-radius: 100px;
 }
 
 .section-1{
@@ -267,6 +290,12 @@ header .row{
     margin-top: 30px;
 }
 
+.benefit-title-h{
+    color: white;
+    font-size: 40px;
+    margin-bottom: 50px;
+}
+
 /* ABOUT US */
 .about-img{
     width: 60%;
@@ -317,6 +346,11 @@ header .row{
     border-radius: 1000px;
     font-size: 20px;
     margin: 40px 0;
+}
+
+.about-title{
+    font-size: 60px;
+    margin-bottom: 30px;
 }
 
 /* FOOTER */
