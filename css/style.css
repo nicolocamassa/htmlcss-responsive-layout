@@ -247,6 +247,10 @@ header .row{
     color: white;
 }
 
+.text-container{
+    width: 100%;
+}
+
 /* BENEFIT */
 .benefit-text{
     line-height: 2;
@@ -263,17 +267,74 @@ header .row{
     margin-top: 30px;
 }
 
+/* ABOUT US */
+.about-img{
+    width: 60%;
+    border-radius: 50%;
+}
+
+.cit-about{
+    font-size: 30px;
+    margin-top: 20px;
+    line-height: 1.5;
+    font-weight: 700;
+}
+
+.contact-about{
+    margin-top: 20px;
+    background-color: #9792e4;
+    border-radius: 100px;
+    border: none;
+    font-size: 18px;
+    color: white;
+    padding: 10px 20px;
+}
+
+/* STARTED */
+.started-section{
+    text-align: center;
+    color: white;
+    line-height: 1.8;
+}
+
+.h3-started{
+    font-weight: 100;
+}
+
+.margin-y-h{
+    margin: 30px;
+    line-height: 1.4;
+}
+
+.slogan-title{
+    color: #fdc15f;
+    font-size: 70px;
+}
+
+.started-btn{
+    padding: 20px 100px;
+    border: none;
+    border-radius: 1000px;
+    font-size: 20px;
+    margin: 40px 0;
+}
+
 /* FOOTER */
 footer .bg-color-section{
     background-color: #333333;
 }
 
+footer{
+    text-align: center;
+    color: white;
+}
+
+.margin-y-60{
+    margin: 60px 0 10px 0;
+}
+
 /* Media Tablet */
 @media screen and (min-width: 576px){
-    header{
-        background-color: red;
-    }
-    
     .container{
         width: 100%;
         height: 100%;
@@ -318,14 +379,25 @@ footer .bg-color-section{
         margin-right: 40px;
     }
 
+    .testimonial{
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .text-container{
+        text-align: left;
+        width: 60%;
+    }
+
+    .expert-text{
+        padding: 0;
+        margin: 0;
+    }
 }
 
 /* Media Desktop */
-@media screen and (min-width: 992px) {
-    header{
-        background-color: rgb(0, 255, 64);
-    }
-    
+@media screen and (min-width: 992px) {  
     .container{
         max-width: 1200px;
     }
